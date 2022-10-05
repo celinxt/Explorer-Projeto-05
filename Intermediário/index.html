@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Mentoria</title>
+  </head>
+  <body>
+    <header>
+      <!-- Header title -->
+      <h1>MENTORIA</h1>
+
+      <!-- Header description -->
+      <p id="head-p">
+        Preencha o formulário abaixo para agendar a sua mentoria
+      </p>
+    </header>
+    <main>
+      <!-- Form -->
+      <form action="#">
+        <!-- Personal info -->
+        <fieldset>
+          <legend>INFORMAÇÕES PESSOAIS</legend>
+
+          <!-- Name -->
+          <div id="flex">
+            <div class="name-flex">
+              <label for="name" class="label-inline">Nome</label>
+              <input type="text" id="name" class="input-style-name" />
+            </div>
+
+            <!-- Last name -->
+            <div class="name-flex">
+              <label for="last-name" class="label-inline">Sobrenome</label>
+              <input type="text" id="last-name" class="input-style-name" />
+            </div>
+          </div>
+          <!-- Email -->
+          <label for="email">
+            Email <span class="spn">(digite um email válido)</span>
+          </label>
+          <input type="text" id="email" class="input-style" />
+
+          <!-- Password -->
+          <label for="pass">
+            Senha <span class="spn">(mínimo de 6 caracteres)</span>
+          </label>
+          <input type="text" id="pass" class="input-style" />
+        </fieldset>
+
+        <!-- Mentor info -->
+        <fieldset>
+          <legend>INFORMAÇÕES DO MENTOR</legend>
+
+          <!-- Mentor's name -->
+          <label for="me-name">
+            Nome do seu mentor <span class="spn">(somente primeiro nome)</span>
+          </label>
+          <input type="text" id="pass" class="input-style" />
+        </fieldset>
+
+        <!-- Time available -->
+        <fieldset>
+          <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+
+          <!-- First mentorship -->
+          <h3>PRIMEIRA MENTORIA</h3>
+
+          <!-- Date -->
+          <div class="flex-date">
+            <div class="flex-date-time">
+              <label for="date">
+                Data <span class="spn">(DD/MM/AAAA)</span>
+              </label>
+              <input type="text" id="date" class="input-date" />
+            </div>
+
+            <!-- Time -->
+            <div class="flex-date-time">
+              <label for="t-start">Das</label>
+              <input type="text" id="t-start" class="input-time" />
+            </div>
+            <div class="flex-date-time">
+              <label for="t-end">Até</label>
+              <input type="text" id="t-end" class="input-time" />
+            </div>
+          </div>
+
+          <!-- Second mentorship -->
+          <h3>SEGUNDA MENTORIA</h3>
+
+          <!-- Date -->
+          <div class="flex-date">
+            <div class="flex-date-time">
+              <label for="date-2">
+                Data <span class="spn">(DD/MM/AAAA)</span>
+              </label>
+              <input type="text" id="date-2" class="input-date" />
+            </div>
+
+            <!-- Time -->
+            <div class="flex-date-time">
+              <label for="t-start-2">Das</label>
+              <input type="text" id="t-start-2" class="input-time" />
+            </div>
+
+            <div class="flex-date-time">
+              <label for="t-end-2">Até</label>
+              <input type="text" id="t-end-2" class="input-time" />
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Submit -->
+        <footer>
+          <input type="submit" id="btn" value="SALVAR" />
+        </footer>
+      </form>
+    </main>
+  </body>
+</html>
